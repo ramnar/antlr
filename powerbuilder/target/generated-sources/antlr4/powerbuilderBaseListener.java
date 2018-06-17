@@ -15,7 +15,7 @@ public class powerbuilderBaseListener implements powerbuilderListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterStart_rule(powerbuilderParser.Start_ruleContext ctx) { System.out.println("Hello");}
+	@Override public void enterStart_rule(powerbuilderParser.Start_ruleContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -147,7 +147,7 @@ public class powerbuilderBaseListener implements powerbuilderListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterForward_decl(powerbuilderParser.Forward_declContext ctx) { System.out.println("Inside Forward");}
+	@Override public void enterForward_decl(powerbuilderParser.Forward_declContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *

@@ -18,7 +18,7 @@
 				<version>${antlr.version}</version>
 				<configuration>
 					<sourceDirectory>${basedir}</sourceDirectory>
-					<grammars>powerbuilder.g4</grammars>
+					<grammars>powerbuilder2.g4</grammars>
 					<visitor>true</visitor>
 					<listener>true</listener>
 				</configuration>
@@ -37,8 +37,8 @@
 				<configuration>
 					<verbose>true</verbose>
 					<showTree>true</showTree>
-					<entryPoint>start_rule</entryPoint>
-					<grammarName>powerbuilder</grammarName>
+					<entryPoint>body_rule</entryPoint>
+					<grammarName>powerbuilder2</grammarName>
 					<packageName></packageName>
 					<exampleFiles>examples/</exampleFiles>
 				</configuration>

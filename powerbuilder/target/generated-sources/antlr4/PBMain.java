@@ -16,13 +16,13 @@ public class PBMain {
 	
     ANTLRInputStream input = new ANTLRInputStream(new FileInputStream(new File("examples/sample.pba")));
 
-    powerbuilderLexer lexer = new powerbuilderLexer(input);
+    powerbuilder2Lexer lexer = new powerbuilder2Lexer(input);
     CommonTokenStream tokens = new CommonTokenStream(lexer);
-    powerbuilderParser parser = new powerbuilderParser(tokens);
-    ParseTree tree = parser.start_rule(); // parse
+    powerbuilder2Parser parser = new powerbuilder2Parser(tokens);
+    ParseTree tree = parser.body_rule(); // parse
 
     ParseTreeWalker walker = new ParseTreeWalker(); // create standard walker
-    powerbuilderBaseListener extractor = new powerbuilderBaseListener();
+    powerbuilder2BaseListener extractor = new powerbuilder2BaseListener();
     walker.walk(extractor, tree); // initiate walk of tree with listener
 	}
 
